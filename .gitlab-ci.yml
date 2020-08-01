@@ -52,9 +52,3 @@ build:
     paths:
       - build/libdiceparser.so.1.9.0
       - build/cli/bin/dice
-
-
-test:
-  stage: test
-  script:
-    - make test
