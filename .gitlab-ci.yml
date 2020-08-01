@@ -52,8 +52,9 @@ build:
     paths:
       - build/libdiceparser.so.1.9.0
       - build/cli/bin/dice
-  # run tests using the binary built before
-  test:
-    stage: test
-    script:
-      - make test
+
+
+test:
+  stage: test
+  script:
+    - make test
