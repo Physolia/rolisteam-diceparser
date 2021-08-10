@@ -1,10 +1,9 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.16)
 
 project(diceparser VERSION 1.9.0 DESCRIPTION "Parser of dice command")
 
-set(QT_REQUIRED_VERSION "5.12.0")
-find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG REQUIRED COMPONENTS Core Test Gui Svg)
-find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG COMPONENTS Qml)
+find_package(Qt6 COMPONENTS Core Test Gui Svg REQUIRED)
+find_package(Qt6 COMPONENTS Qml REQUIRED)
 
 enable_testing(true)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR} result node)

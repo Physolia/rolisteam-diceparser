@@ -1,6 +1,6 @@
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -fno-permissive -pedantic -Wall -Wextra")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fno-permissive -pedantic -Wall -Wextra")
 set(CMAKE_AUTOMOC ON)
-find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG REQUIRED COMPONENTS Core Gui Svg Test)
+find_package(Qt6 COMPONENTS Core Gui Svg Test REQUIRED)
 
 set(test_source testnode.cpp tst_dice.cpp)
 
